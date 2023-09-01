@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "open sans", sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+p {
+  margin: 10px 0;
+}
+img {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background-color: #333;
+  color: #fff;
+  opacity: 0.8;
+  padding: 0 30px;
+  position: fixed;
+  top: 0;
+}
+.navbar .top {
+  background: transparent;
+}
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul a:hover {
+  cursor: pointer;
+  border-bottom: #28a745 solid 2px;
+}
+.hero {
+  background-image: url("../css/img/showcase.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+.hero .content h1 {
+  font-size: 55px;
+}
+.hero .content p {
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0px 30px;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.hero * {
+  z-index: 10;
+}
+.icons {
+  padding: 30px;
+}
+.icons h1 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.icons i {
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.section-h .cases img:hover {
+  padding: 30px;
+  opacity: 0.7;
+}
+#blog.flex-reverse .row {
+  flex-direction: row-reverse;
+}
+
+.callback-form {
+  width: 100%;
+  padding: 20px 0;
+}
+.callback-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.callback-form .form-control {
+  margin-bottom: 15px;
+}
+.callback-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: #f5f5f5 solid 1px;
+}
+.callback-form input:focus {
+  outline-color: #28a745;
+}
+.callback-form .btn {
+  padding: 12px 0;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+.footer a {
+  color: #fff;
+}
+.footer a:hover {
+  color: #28a745;
+}
+.footer .social > * {
+  margin-right: 30px;
+}
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    padding: 20px;
+    height: 120px;
+  }
+  .navbar a {
+    padding: 10px 10px;
+    margin: 0px 3px;
+  }
+  .flex-items {
+    flex-direction: column;
+  }
+  .flex-column .column,
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .team img {
+    width: 70%;
+  }
+}
+.hero-blog {
+  background-image: url("../images/home/blog.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30vh;
+}
+.flex-column .column .btn.btn-dark a {
+  background-color: #333;
+}
+
+.flex-reverse .row {
+  flex-direction: row-reverse;
+}
+.post {
+  padding: 50px 30px;
+}
+.post h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: #ccc solid 1px;
+}
+.post .meta {
+  margin-bottom: 30px;
+}
+.post img {
+  width: 300px;
+  border-radius: 50%;
+  display: block;
+  margin: 0px auto 30px;
+}
